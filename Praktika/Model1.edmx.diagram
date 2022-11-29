@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cc5c6fc70e854485ba8a25ee02f9c2d5" Name="Diagram1">
+        <EntityTypeShape EntityType="SDBModel.Client" Width="1.5" PointX="3" PointY="4.75" />
+        <EntityTypeShape EntityType="SDBModel.ClientService" Width="1.5" PointX="5.25" PointY="1.125" />
+        <EntityTypeShape EntityType="SDBModel.Gender" Width="1.5" PointX="0.75" PointY="5.5" />
+        <EntityTypeShape EntityType="SDBModel.Photo" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="SDBModel.ServiceCenter" Width="1.5" PointX="3" PointY="1" />
+        <AssociationConnector Association="SDBModel.FK_Client_Gender" />
+        <AssociationConnector Association="SDBModel.FK_ClientService_Client" />
+        <AssociationConnector Association="SDBModel.FK_ClientService_ServiceCenter" />
+        <AssociationConnector Association="SDBModel.FK_ServiceCenter_Photo" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
